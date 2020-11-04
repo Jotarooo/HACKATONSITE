@@ -19,6 +19,8 @@
 
     <footer>
         <div>
+          <a href="nosprestataires.html">prestatairehtml</a>
+          <a href="prestattairephp.php">prestattairephp</a>
             <p>
                 footer
             </p>
@@ -26,4 +28,6 @@
     </footer>
     
 </body>
+
+
 </html>

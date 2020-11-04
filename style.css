@@ -17,6 +17,11 @@ h2 {
     opacity: 1;
 }
 
+.header{
+    height: 500px;
+    width: auto;
+}
+
 img {
     top: 0px;
     left: 0px;
