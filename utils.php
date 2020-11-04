@@ -45,12 +45,24 @@ function master_header(){
 
 
 function master_footer(){
-  printf('<div class="footer container py-5">
+  printf('<div class="footer container mt-5 py-5">
   <div class="row">
     <div class="h1 col-6 ">Footer</div>
   </div>
 </div>
   ');
+}
+
+function buttonss(){
+  printf('
+  <div class="container">
+    <div class="row"><div class="col-3"><a class="btn btn-primary" href="#" role="button">Retour a lacceuil</a></div>
+      <div class="col-3"><button type="submit" class="btn btn-primary">Valider ses choix</button></div>
+      <div class="col-3"><a class="btn btn-primary" href="#" role="button">Ajouter un prestataire</a></div>
+      <div class="col-3"><a class="btn btn-primary" href="#" role="button">Quitter</a></div>
+       </div>
+    </div>
+');
 }
 
 function multi_cards_prestataire(){
@@ -69,39 +81,37 @@ function multi_cards_prestataire(){
   
       /* Lecture des valeurs */
       while ($stmt->fetch()) {
-        printf('<div class="card text-right container" style="width: auto">
+        printf('<div class="card text-center container my-5" style="width: auto">
 
         <div class="row">
-            <div class="card-body">
-                <h5 class="card-title text-left">'.$categorie.'</h5>
-              </div>
-      
-              <div class="dropdown m-3">
-                <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                  Vos choix
-                </button>
-                <div class="dropdown-menu pb-0 " aria-labelledby="dropdownMenuOffset">
-                  <p class="dropdown-item text-primary disabled ">$nom</p>
-      
-                </div>
-              </div>
-              
-              <div class="dropdown m-3">
-                <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                  Prestataires
-                </button>
-                <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">
-                
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <div class="card-body">
+            <h5 class="card-title text-left">'.$categorie.'</h5>
+        </div>
+  
+        <div class="dropdown m-3">
+          <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            Vos choix
+          </button>
+          <div class="dropdown-menu pb-0 " aria-labelledby="dropdownMenuOffset">
+            <p class="dropdown-item text-primary disabled ">$checked</p>
 
-                    <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="defaultCheck1">
-                     '.$nom.'
-                    </label>
-                    <div class="dropdown-menu" style="width=30px" >
-                        <p class="dropdown-item" aria-labelledby="dropdowndesc">'.$description.'</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+          
+        <div class="dropdown m-3">
+          <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            Prestataires
+          </button>
+          <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="defaultCheck1">
+               '.$nom.'
+              </label>
+              <div class="dropdown-menu" style="width=30px" >
+                  <p class="dropdown-item" aria-labelledby="dropdowndesc">'.$description.'</p>
               </div>
+          </div>
+        </div>
       
         </div>
         
