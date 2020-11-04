@@ -1,7 +1,5 @@
 header
 {
-    position: relative;
-    top: auto;
     margin-top: 0%;
     height: 200px;
     width: auto;
@@ -10,11 +8,9 @@ header
 }
 
 footer{
-    position: absolute;
-    top: 1000px;
-    bottom: 0px;
-    border: solid blueviolet;
-    text-align: center  ;
-    height: 100px;
-    width:1500px;
+    margin-top: 0%;
+    height: 200px;
+    width: auto;
+    border: black solid;
+    text-align: center;
 }
