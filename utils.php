@@ -42,6 +42,20 @@ function master_header(){
 
 }
 
+function alertdevis(){
+  printf('
+
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Votre devis à bien été enregistré</h4>
+    <p>Vous recevrez le devis dans quelques jours.Vérifiez votre boîte mail ;)</p>
+    <hr>
+    <p class="mb-0">Bonne journée.</p>
+    <a class="btn btn-info" href="nosprestataires.php">Aller voir la page des prestataires</a>
+    <a class="btn btn-info" href="index.php">Acceuil</a>
+
+  </div>
+  ');
+}
 
 
 function master_footer(){
@@ -98,20 +112,12 @@ function multi_cards_prestataire(){
         <div class="card-body">
             <h5 class="card-title text-left">'.$categorie.'</h5>
         </div>
-        <div class="dropdown m-3">
-          <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Vos choix
-          </button>
-          <div class="dropdown-menu pb-0 " aria-labelledby="dropdownMenuOffset">
-            <p class="dropdown-item text-primary disabled ">$checked</p>
-          </div>
-        </div>
-          
+        
         <div class="dropdown m-3">
           <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
             Prestataires
           </button>
-          <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
+        <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
   
             /* pour chaque catï¿½gorie, afficher le prestataire */
            foreach($prestas as $p) {
@@ -119,13 +125,13 @@ function multi_cards_prestataire(){
         printf('
                 
                 <div class="dropdown-item">
-            <input class="form-check-input presta-checkbox" type="checkbox"  name="presta[]" id="presta" value="'.$p[$colId].'">
-              <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="check-presta-'.$p[$colId].'">
+              <input class="form-check-input presta-checkbox" type="checkbox"  name="presta[]" id="presta" value="'.$p[$colId].'">
+              <label class="btn form-check-label "  aria-haspopup="true" aria-expanded="false" data-offset="10,20"  for="check-presta-'.$p[$colId].'">
                '.$p[$colNom].'
-              </label>
+              </label>  
               
-              <div class="dropdown-menu" style="width=30px" >
-                  <p class="dropdown-item" aria-labelledby="dropdowndesc">'.$p[$colDescription].'</p>
+              <div class="collapse" id="descript">
+                  <div class="card card-body">  aria-labelledby="dropdowndesc">'.$p[$colDescription].'</div>
               </div>
               </div>
           
