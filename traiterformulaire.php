@@ -14,6 +14,9 @@
     $dbname = "qgO0M364Or";
     $password = "7Hyomgetg3";
 
+    $prestaIds = $_POST['presta'];
+    var_dump($prestaIds);
+
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -31,7 +34,7 @@
 
     $conn->query($sql);
     $devisId = $conn->insert_id;
-    $sql = 
+    $sql = "";
 
 
     ?>

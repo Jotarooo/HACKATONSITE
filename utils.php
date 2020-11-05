@@ -1,11 +1,11 @@
 <?php
 
 function GetConnection() {
-    // Connexion et sélection de la base
+    // Connexion et sï¿½lection de la base
     $mysqli = new mysqli('remotemysql.com', 'qgO0M364Or', '7Hyomgetg3','qgO0M364Or');
-    /* Vérifie la connexion */
+    /* Vï¿½rifie la connexion */
     if (mysqli_connect_errno()) {
-        printf("Échec de la connexion : %s\n", mysqli_connect_error());
+        printf("ï¿½chec de la connexion : %s\n", mysqli_connect_error());
         exit();
     }
 
@@ -18,10 +18,10 @@ function GetAllPrestataire() {
 
     if ($stmt = $mysqli->prepare($query)) {
 
-        /* Exécution de la requête */
+        /* Exï¿½cution de la requï¿½te */
         $stmt->execute();
     
-        /* Association des variables de résultat */
+        /* Association des variables de rï¿½sultat */
         $stmt->bind_result($nom, $url, $description);
     }
     
@@ -113,13 +113,13 @@ function multi_cards_prestataire(){
           </button>
           <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
   
-            /* pour chaque catégorie, afficher le prestataire */
+            /* pour chaque catï¿½gorie, afficher le prestataire */
            foreach($prestas as $p) {
               if($p[$colCategorie] == $categorie) {
         printf('
                 
                 <div class="dropdown-item">
-            <input class="form-check-input presta-checkbox" type="checkbox"  id="check-presta-'.$p[$colId].'">
+            <input class="form-check-input presta-checkbox" type="checkbox"  name="presta[]" id="presta" value="'.$p[$colId].'">
               <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="check-presta-'.$p[$colId].'">
                '.$p[$colNom].'
               </label>
