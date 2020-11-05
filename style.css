@@ -7,7 +7,7 @@ h1 {
     opacity: 1;
 }
 
-h2 {
+.h2-wedding {
     top: 607px;
     height: 127px;
     text-align: center;
@@ -17,9 +17,9 @@ h2 {
     opacity: 1;
 }
 
-.header{
-    height: 500px;
-    width: auto;
+header{
+   
+    background-image: url('/img/mains.jpg');
 }
 
 img {
