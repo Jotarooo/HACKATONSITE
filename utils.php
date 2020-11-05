@@ -45,6 +45,18 @@ function master_header(){
 
 
 function master_footer(){
+  printf('
+  <div class="container">
+    <div class="row"><div class="col-3">
+      <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div>
+      <div class="col-2"><button type="submit" class="btn btn-primary">Valider ses choix</button></div>
+      <div class="col-2"><a class="btn btn-primary" href="#" role="button">Ajouter un prestataire</a></div>
+      <div class="col-2"><a class="btn btn-primary" href="#" role="button">Exigeance</a></div>
+      <a href="formulaire.php" class="button">faire un formulaire</a>
+
+      </div>
+    </div>
+');
   printf('<div class="footer container mt-5 py-5">
   <div class="row">
     <div class="h1 col-6 ">Footer</div>
@@ -53,17 +65,6 @@ function master_footer(){
   ');
 }
 
-function buttonss(){
-  printf('
-  <div class="container">
-    <div class="row"><div class="col-3"><a class="btn btn-primary" href="#" role="button">Retour a lacceuil</a></div>
-      <div class="col-3"><button type="submit" class="btn btn-primary">Valider ses choix</button></div>
-      <div class="col-3"><a class="btn btn-primary" href="#" role="button">Ajouter un prestataire</a></div>
-      <div class="col-3"><a class="btn btn-primary" href="#" role="button">Quitter</a></div>
-       </div>
-    </div>
-');
-}
 
 function multi_cards_prestataire(){
 
