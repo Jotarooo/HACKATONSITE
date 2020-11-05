@@ -3,6 +3,14 @@ h1 {
     font: #EBF500;
     font-family: Edwardian Script ITC;
     font-size: 159px;
+    color: #EBF500;
+    border: #EBA00B;
+    text-shadow: #EBF500;
+}
+h2 {
+    font: #EBF500;
+    font-family: Edwardian Script ITC;
+    font-size: 159px;
     border: #EBA00B;
     text-shadow: #EBF500;
     width: 958px;
@@ -14,10 +22,7 @@ h1 {
     height: 645px;
 
 }
-.containerh-fluid col{
 
-
-}
 .containerb-fluid {
     background-image: url(/img/thaiti-768x432.png);
     background-size: cover;
