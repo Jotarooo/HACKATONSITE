@@ -9,15 +9,6 @@
    $numero = $_POST['numero'];
    $prestaIds = $_POST['presta'];
 
-    //$nom = 'spidertest';
-    //$prenom = 'testdeouf';
-    //$email = '@mail';
-    //$date = date("Y-m-d");
-    //$exigence = 'chepa ';
-    //$numero ='52622626';
-    //$prestaIds = array('1','2','3');
-
-
     $mysqli = GetConnection();
 
     $servername = "remotemysql.com";
@@ -32,11 +23,14 @@
 
     $sql = "";
     foreach($prestaIds as $pid){
-      $sql .= "INSERT INTO DevisPrestataire (devisid,prestataireid) VALUES ($devisId,$pid);"; //concaténer si ne marche pas
+      $sql .= "INSERT INTO DevisPrestataire (devisid,prestataireid) VALUES ($devisId,$pid);";
     }
 
     $mysqli->multi_query($sql);
- 
+    if($mysqli == true){
+      header()
+    }
+    
     $mysqli->close();
 
     ?>
