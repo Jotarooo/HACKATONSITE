@@ -1,11 +1,11 @@
 <?php
 
 function GetConnection() {
-    // Connexion et sélection de la base
+    // Connexion et sï¿½lection de la base
     $mysqli = new mysqli('remotemysql.com', 'qgO0M364Or', '7Hyomgetg3','qgO0M364Or');
-    /* Vérifie la connexion */
+    /* Vï¿½rifie la connexion */
     if (mysqli_connect_errno()) {
-        printf("Échec de la connexion : %s\n", mysqli_connect_error());
+        printf("ï¿½chec de la connexion : %s\n", mysqli_connect_error());
         exit();
     }
 
@@ -18,10 +18,10 @@ function GetAllPrestataire() {
 
     if ($stmt = $mysqli->prepare($query)) {
 
-        /* Exécution de la requête */
+        /* Exï¿½cution de la requï¿½te */
         $stmt->execute();
     
-        /* Association des variables de résultat */
+        /* Association des variables de rï¿½sultat */
         $stmt->bind_result($nom, $url, $description);
     }
     
@@ -69,15 +69,15 @@ function multi_cards_prestataire(){
 
   $mysqli = GetConnection();
 
-  // Exécution des requêtes SQL
-  $query = "SELECT nom, description,categorie FROM Prestataire";
+  // Exï¿½cution des requï¿½tes SQL
+  $query = "SELECT id, nom, description,categorie FROM Prestataire";
   if ($stmt = $mysqli->prepare($query)) {
   
-      /* Exécution de la requête */
+      /* Exï¿½cution de la requï¿½te */
       $stmt->execute();
   
-      /* Association des variables de résultat */
-      $stmt->bind_result($nom, $description, $categorie );
+      /* Association des variables de rï¿½sultat */
+      $stmt->bind_result($id, $nom, $description, $categorie );
   
       /* Lecture des valeurs */
       while ($stmt->fetch()) {
@@ -103,8 +103,8 @@ function multi_cards_prestataire(){
             Prestataires
           </button>
           <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="defaultCheck1">
+            <input class="form-check-input" type="checkbox"  id="check-presta-'.$id.'">
+              <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="check-presta-'.$id.'">
                '.$nom.'
               </label>
               <div class="dropdown-menu" style="width=30px" >
