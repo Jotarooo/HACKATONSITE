@@ -1,9 +1,8 @@
 header
 {
-    top: 0px;
-    width: auto;
-    height: 645px;
-    background-color: blue;
+    margin-top: 0%;
+    height: 200px;
+    width: 1000px;
     border: black solid;
     text-align: center;
 }
@@ -12,7 +11,7 @@ header
 footer{
     margin-top: 0%;
     height: 200px;
-    width: auto;
+    width: 1000px;
     border: black solid;
     text-align: center;
 }

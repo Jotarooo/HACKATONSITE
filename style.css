@@ -63,7 +63,12 @@ h1 {
     position: absolute;
 }
 
-.logo {
+.header{
+    height: 500px;
+    width: auto;
+}
+
+img {
     top: 0px;
     left: 0px;
     
