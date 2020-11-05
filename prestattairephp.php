@@ -17,27 +17,28 @@
   </head>
 
   <body>
+
           <?php
             include('utils.php');
 
-// // Connexion et sélection de la base
+// // Connexion et sï¿½lection de la base
 // $mysqli = new mysqli('remotemysql.com', 'qgO0M364Or', '7Hyomgetg3','qgO0M364Or');
-// /* Vérifie la connexion */
+// /* Vï¿½rifie la connexion */
 // if (mysqli_connect_errno()) {
-//     printf("Échec de la connexion : %s\n", mysqli_connect_error());
+//     printf("ï¿½chec de la connexion : %s\n", mysqli_connect_error());
 //     exit();
 // }
 
 $mysqli = GetConnection();
 
-// Exécution des requêtes SQL
+// Exï¿½cution des requï¿½tes SQL
 $query = "SELECT nom, url, description FROM Prestataire";
 if ($stmt = $mysqli->prepare($query)) {
 
-    /* Exécution de la requête */
+    /* Exï¿½cution de la requï¿½te */
     $stmt->execute();
 
-    /* Association des variables de résultat */
+    /* Association des variables de rï¿½sultat */
     $stmt->bind_result($nom, $url, $description);
 
     /* Lecture des valeurs */
@@ -56,7 +57,6 @@ $mysqli->close();
 
 
 
-
 <?php master_footer();?>
 
  
@@ -64,6 +64,12 @@ $mysqli->close();
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+<script>
+  $(document).ready(function() {
+    $('.presta-checkbox ').change(function() {
+      console.log('check' + this.id);
+    });
+  });
+  </script>
 </body>
 </html>
