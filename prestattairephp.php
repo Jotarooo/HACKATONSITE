@@ -56,96 +56,10 @@ $mysqli->close();
 <?php master_header();?>
 
 
-<?php 
-$mysqli = GetConnection();
-
-// Ex�cution des requ�tes SQL
-$query = "SELECT id, nom, description, categorie FROM Prestataire";
-if ($stmt = $mysqli->prepare($query)) {
-
-    /* Ex�cution de la requ�te */
-    $stmt->execute();
-
-    /* Association des variables de r�sultat */
-    //$stmt->bind_result($id, $nom, $description, $categorie );
-    $colId=0;
-    $colNom=1;
-    $colDescription=2;
-    $colCategorie=3;
-
-    $results = $stmt->get_result();
-    $prestas = $results->fetch_all();
-    $categories;
-    foreach($prestas as $p){
-      $categories[] = $p[$colCategorie];
-    }
-
-    $categories = array_unique($categories);
-    /* Lecture des valeurs */
-    foreach($categories as $categorie) {
-      printf('<div class="card text-center container my-5" style="width: auto">
-
-      <div class="row">
-      <div class="card-body">
-          <h5 class="card-title text-left">'.$categorie.'</h5>
-      </div>
-
-      <div class="dropdown m-3">
-        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-          Vos choix
-        </button>
-        <div class="dropdown-menu pb-0 " aria-labelledby="dropdownMenuOffset">
-          <p class="dropdown-item text-primary disabled ">$checked</p>
-
-        </div>
-      </div>
-        
-      <div class="dropdown m-3">
-        <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-          Prestataires
-        </button>
-        <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
-
-          /* pour chaque catégorie, afficher le prestataire */
-         foreach($prestas as $p) {
-            if($p[$colCategorie] == $categorie) {
-      printf('
-              
-              <div class="dropdown-item">
-          <input class="form-check-input presta-checkbox" type="checkbox"  id="check-presta-'.$p[$colId].'">
-            <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="check-presta-'.$p[$colId].'">
-             '.$p[$colNom].'
-            </label>
-            <div class="dropdown-menu" style="width=30px" >
-                <p class="dropdown-item" aria-labelledby="dropdowndesc">'.$p[$colDescription].'</p>
-            </div>
-            </div>
-        
-        ');
-          }
-        }
-          printf('
-          </div>
-      </div>
-      
-      </div>
-    </div>
-      ');      
-    }
-
-    /* Fermeture de la commande */
-    $stmt->close();
-}
-/* Fermeture de la connexion */
-$mysqli->close();
-
-?>
-
-<?php buttonss();?>
 
 <?php master_footer();?>
 
-
+ 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

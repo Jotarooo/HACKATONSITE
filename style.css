@@ -68,9 +68,9 @@ h2 {
     position: absolute;
 }
 
-.header{
-    height: 500px;
-    width: auto;
+header{
+   
+    background-image: url('/img/mains.jpg');
 }
 
 img {

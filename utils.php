@@ -42,9 +42,35 @@ function master_header(){
 
 }
 
+function alertdevis(){
+  printf('
+
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Votre devis à bien été enregistré</h4>
+    <p>Vous recevrez le devis dans quelques jours.Vérifiez votre boîte mail ;)</p>
+    <hr>
+    <p class="mb-0">Bonne journée.</p>
+    <a class="btn btn-info" href="nosprestataires.php">Aller voir la page des prestataires</a>
+    <a class="btn btn-info" href="index.php">Acceuil</a>
+
+  </div>
+  ');
+}
 
 
 function master_footer(){
+  printf('
+  <div class="container">
+    <div class="row"><div class="col-3">
+      <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div>
+      <div class="col-2"><button type="submit" class="btn btn-primary">Valider ses choix</button></div>
+      <div class="col-2"><a class="btn btn-primary" href="#" role="button">Ajouter un prestataire</a></div>
+      <div class="col-2"><a class="btn btn-primary" href="#" role="button">Exigeance</a></div>
+      <a href="formulaire.php" class="button">faire un formulaire</a>
+
+      </div>
+    </div>
+');
   printf('<div class="footer container mt-5 py-5">
   <div class="row">
     <div class="h1 col-6 ">Footer</div>
@@ -53,68 +79,70 @@ function master_footer(){
   ');
 }
 
-function buttonss(){
-  printf('
-  <div class="container">
-    <div class="row"><div class="col-3"><a class="btn btn-primary" href="#" role="button">Retour a lacceuil</a></div>
-      <div class="col-3"><button type="submit" class="btn btn-primary">Valider ses choix</button></div>
-      <div class="col-3"><a class="btn btn-primary" href="#" role="button">Ajouter un prestataire</a></div>
-      <div class="col-3"><a class="btn btn-primary" href="#" role="button">Quitter</a></div>
-       </div>
-    </div>
-');
-}
 
 function multi_cards_prestataire(){
-
   $mysqli = GetConnection();
-
-  // Exï¿½cution des requï¿½tes SQL
-  $query = "SELECT id, nom, description,categorie FROM Prestataire";
+  
+  // Ex?cution des requ?tes SQL
+  $query = "SELECT id, nom, description, categorie FROM Prestataire";
   if ($stmt = $mysqli->prepare($query)) {
   
-      /* Exï¿½cution de la requï¿½te */
+      /* Ex?cution de la requ?te */
       $stmt->execute();
   
-      /* Association des variables de rï¿½sultat */
-      $stmt->bind_result($id, $nom, $description, $categorie );
+      /* Association des variables de r?sultat */
+      //$stmt->bind_result($id, $nom, $description, $categorie );
+      $colId=0;
+      $colNom=1;
+      $colDescription=2;
+      $colCategorie=3;
   
+      $results = $stmt->get_result();
+      $prestas = $results->fetch_all();
+      $categories;
+      foreach($prestas as $p){
+        $categories[] = $p[$colCategorie];
+      }
+  
+      $categories = array_unique($categories);
       /* Lecture des valeurs */
-      while ($stmt->fetch()) {
+      foreach($categories as $categorie) {
         printf('<div class="card text-center container my-5" style="width: auto">
-
         <div class="row">
         <div class="card-body">
             <h5 class="card-title text-left">'.$categorie.'</h5>
         </div>
-  
-        <div class="dropdown m-3">
-          <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Vos choix
-          </button>
-          <div class="dropdown-menu pb-0 " aria-labelledby="dropdownMenuOffset">
-            <p class="dropdown-item text-primary disabled ">$checked</p>
-
-          </div>
-        </div>
-          
+        
         <div class="dropdown m-3">
           <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
             Prestataires
           </button>
-          <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">
-            <input class="form-check-input" type="checkbox"  id="check-presta-'.$id.'">
-              <label class="form-check-label  dropdown-toggle" id="dropdowndesc" aria-haspopup="true" aria-expanded="false" data-offset="10,20" data-toggle="dropdown" for="check-presta-'.$id.'">
-               '.$nom.'
-              </label>
-              <div class="dropdown-menu" style="width=30px" >
-                  <p class="dropdown-item" aria-labelledby="dropdowndesc">'.$description.'</p>
+        <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
+  
+            /* pour chaque catï¿½gorie, afficher le prestataire */
+           foreach($prestas as $p) {
+              if($p[$colCategorie] == $categorie) {
+        printf('
+                
+                <div class="dropdown-item">
+              <input class="form-check-input presta-checkbox" type="checkbox"  name="presta[]" id="presta" value="'.$p[$colId].'">
+              <label class="btn form-check-label "  aria-haspopup="true" aria-expanded="false" data-offset="10,20"  for="check-presta-'.$p[$colId].'">
+               '.$p[$colNom].'
+              </label>  
+              
+              <div class="collapse" id="descript">
+                  <div class="card card-body">  aria-labelledby="dropdowndesc">'.$p[$colDescription].'</div>
               </div>
-          </div>
-        </div>
-      
+              </div>
+          
+          ');
+            }
+          }
+            printf('
+            </div>
         </div>
         
+        </div>
       </div>
         ');      
       }
@@ -126,5 +154,6 @@ function multi_cards_prestataire(){
   $mysqli->close();
   
 }
+  
 
-?>
+
