@@ -8,26 +8,32 @@
   <link rel="stylesheet" href="/form.css">
   
 </head>
-<body>   
+<body> 
+<?php require ('utils.php');?>  
 
 <div id="connexion" class="container">
   <div class="row">
-    <div class="col-6 ">
+    <div class="col-12 ">
     
 
-      <form action="traiterformulaire.php" method="post">
+      <form id="msform" action="traiterformulaire.php" method="post">
 
         <ul id="progressbar">
           <li class="active">Choix des prestataires</li>
           <li>Information clients</li>
         </ul>
 
-      <fieldset>
+        <fieldset>
 
           <h2 class="fs-title">Prestataires</h2>
+
+          <?php multi_cards_prestataire();?>
+
+
+
           <input type="button" name="next" class="next action-button" value="Next"/>
 
-      </fieldset>
+        </fieldset>
 
 
         <fieldset class="fs-title">
@@ -63,7 +69,9 @@
           <label for="date_client">Date</label>
           <input required id="date_client" name="date" type="date" class="form-control" placeholder="Date">
         </div>
+        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
         <button type="submit" class="btn btn-primary">Envoyer le devis</button>    
+
 
         </fieldset>
 

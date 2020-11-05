@@ -31,6 +31,7 @@
 
     $conn->query($sql);
     $devisId = $conn->insert_id;
+    $sql = 
 
 
     ?>

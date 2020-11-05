@@ -55,7 +55,6 @@ $mysqli->close();
 <?php master_header();?>
 
 
-<?php multi_cards_prestataire();?>
 
 
 <?php master_footer();?>
