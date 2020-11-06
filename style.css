@@ -14,6 +14,7 @@
 }
 .titreNom {
     color: #EBF500;
+    text-shadow: 4px 4px 4px	#FFD700;
     font-family: 'Tangerine', serif;
     font-size: 180px;
     -webkit-text-stroke: 2px #EBA00B;
@@ -265,4 +266,9 @@
     font-size: 105px;
     font-weight: bold;
     text-align: center;
+}
+.bodybodyinscription {
+    height:1360px;
+    background-color: white;
+    bac
 }
