@@ -27,6 +27,8 @@
 }
 .sloganNom {
     -webkit-text-stroke: 2px #EBA00B;
+    
+    text-shadow: 4px 4px 4px	#FFD700;
     color: #EBF500;
     font-family: 'Tangerine', serif;
     font-size: 150px;
@@ -269,6 +271,7 @@
 }
 .bodybodyinscription {
     height:1360px;
-    background-color: white;
-    bac
+    background-image: url('/img/inscriptionEnCours.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
