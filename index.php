@@ -8,12 +8,14 @@
   <title>Markiz Wedding</title>
 </head>
 <body>
+  <img src="/img/header.png" alt="">
   <div class="containerh-fluid">
     <div class="row">
+      
       <div class="col-12">
     </div>
-    <div class="row">
-      <div class="col-12">
+    <h1>Marquises Wedding</h1>
+    <h2>Vivez Vos Rêves aux Marquises</h1>
       
     </div>
   </div>
@@ -22,8 +24,8 @@
         <div>
             <img src="img/" alt="">
             <img src="img/logo marquises weeding 2.png" alt="">
-            <h1>Markiz Wedding</h1>
-            <h2>Vivez Vos Rêves aux Marquises</h1>
+            
+            
         </div>
     </header>
 
