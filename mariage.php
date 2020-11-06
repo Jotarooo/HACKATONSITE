@@ -55,7 +55,7 @@
         </a>
       </div>
       <div class="col lg-6">
-        <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+        <a href="index3.html" style="text-decoration:none">
           <div class="mariage2">
           </div>
           <div class="mariage2Text">
@@ -71,7 +71,7 @@
     <div class="row">
       <div class="col-1"></div>
         <div class="col">
-          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+          <a href="index3.html" style="text-decoration:none">
             <div class="mariage3">
             </div>
             <div class="mariage3Text">
@@ -83,7 +83,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+          <a href="index3.html" style="text-decoration:none">
             <div class="mariage4">
             </div>
             <div class="mariage4Text">
@@ -135,7 +135,6 @@
         <div class="col-3 col-md">
         <div class="titreFooter1col">
           Marquises Wedding
-          <img src="/img/souligne.png" alt="">
         </div>
         </div>
         <div class="col-3">

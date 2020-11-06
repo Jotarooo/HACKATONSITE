@@ -36,7 +36,7 @@
     <div class="row">
       <div class="col-1"></div>
       <div class="col lg-6">
-        <a href="mariage.html" style="text-decoration:none">
+        <a href="mariage.php" style="text-decoration:none">
         <div class="mariage">
         </div>
         <div class="mariageText">
@@ -45,7 +45,7 @@
         </a>
       </div>
       <div class="col lg-6">
-        <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+        <a href="index3.html" style="text-decoration:none">
         <div class="luneDeMiel">
         </div>
         <div class="luneDeMielText">
