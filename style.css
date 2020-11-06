@@ -1,75 +1,267 @@
-
-h1 {
-
-    color: #EBF500;
-    font-family: Edwardian Script ITC;
-    font-size: 180px;
-    border: #EBA00B;
-    
-}
-h2 {
-
-    color: #EBF500;
-    font-family: Edwardian Script ITC;
-    font-size: 150px;
-    border: #EBA00B;
-    
-}
-
 .containerh-fluid {
     background-image: url(/img/header.png);
     background-size: cover;
     height: 645px;
-
 }
-
-.containerb-fluid {
-    background-image: url(/img/thaiti-768x432.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.containerf-fluid {
-    background-image: url(/img/footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.imgheader-fluid {
-    margin-top: 0%;
-    margin-left: 0%;
-    width: 100%;
+.headerHeader {
     height: 645px;
-    
-}
-
-.titrePrincipal {
-    top: 0px;
-    font: normal normal normal 159px/187px Edwardian Script ITC;
-    letter-spacing: 0px;
-    color: #EBF500;
-    opacity: 1;
-}
-
-.slogan {
-    top: 512px;
-    height: auto;
-    bottom: 0px;
-    text-align: auto;
-    font: normal normal normal 96px/127px Matura MT Script Capitals;
-    letter-spacing: 0px;
-    color: #FF0000;
-    opacity: 1;
-    position: absolute;
-}
-
-.masthead {
-    height: 100vh;
-    min-height: 500px;
     background-image: url('img/9.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
+.logo {
+    padding-top: 20px;
+}
+.titreNom {
+    color: #EBF500;
+    font-family: Edwardian Script ITC;
+    font-size: 180px;
+    -webkit-text-stroke: 3px #EBA00B;
+    height: 187px;
+}
+.titre {
+    margin-top: -235px;
+    margin-left: 0px;
+}
+.sloganNom {
+    -webkit-text-stroke: 3px #EBA00B;
+    color: #EBF500;
+    font-family: Edwardian Script ITC;
+    font-size: 150px;
+}
+.slogan {
+    margin: auto;
+}
 
-  
+.containerb-fluid {
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.containerf-fluid {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerf-fluid li {
+    font-family: Edwardian Script ITC;
+    font-size: 25px;
+    text-align: center;
+    color: yellow;
+}
+.titreFooter1col {
+    color:#EBF500;
+    font-family: Edwardian Script ITC;
+    font-size: 85px;
+}
+.titreFooter2col {
+    color:white;
+    font-family: Edwardian Script ITC;
+    font-size: 65px;
+}
+.titreFooter3col {
+    color:white;
+    font-family: Edwardian Script ITC;
+    font-size: 65px;
+}
+.petitpetittransparent {
+    color: black;
+    font-size: 20px;
+}
+.centrerText {
+    text-align: center;
+}
+.centrerText2 {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color:#EBF500;
+    font-size: 35px;
+}
+.bodybody {
+    height: 1500px;
+    background-image: url('img/coucheSoleil.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bodybodymariage {
+    height:2500px;
+    background-image: url('img/thaiti-768x432.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mariage {
+    background-image: url('img/1ermariage.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 393px;
+    width: 589px;
+}
+.mariageText {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 75px;
+    width: 589px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+.luneDeMiel {
+    background-image: url('img/2eme.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 393px;
+    width: 589px;
+}
+.luneDeMielText {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 80px;
+    width: 589px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.soiree {
+    background-image: url('img/3eme.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 393px;
+    width: 589px;
+}
+.soireeText {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 75px;
+    width: 589px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+.anniv {
+    background-image: url('img/4eme.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 393px;
+    width: 589px;
+}
+.annivText {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 80px;
+    width: 589px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+.mariage1 {
+    background-image: url('img/mariage1.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 341px;
+    width: 550px;
+}
+.mariage1Text {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 55px;
+    width: 555px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.mariage2 {
+    background-image: url('img/mariage2.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 341px;
+    width: 550px;
+}
+.mariage2Text {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 55px;
+    width: 555px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.mariage3 {
+    background-image: url('img/mariage3.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 341px;
+    width: 550px;
+}
+.mariage3Text {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 55px;
+    width: 555px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.mariage4 {
+    background-image: url('img/mariage4.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 341px;
+    width: 550px;
+}
+.mariage4Text {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 55px;
+    width: 555px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.mariage5 {
+    background-image: url('img/mariage5.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 341px;
+    width: 550px;
+}
+.mariage5Text {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 55px;
+    width: 555px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.mariage6 {
+    background-image: url('img/mariage6.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 341px;
+    width: 550px;
+}
+.mariage6Text {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    color: black;
+    font-size: 55px;
+    width: 555px;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.titleMariage {
+    color: black;
+    font-family: Edwardian Script ITC;
+    font-size: 105px;
+    font-weight: bold;
+    text-align: center;
