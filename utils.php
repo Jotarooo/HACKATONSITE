@@ -157,3 +157,80 @@ function multi_cards_prestataire(){
   
 
 
+
+function multi-prestataire(){
+  $mysqli = GetConnection();
+  
+  // Ex?cution des requ?tes SQL
+  $query = "SELECT id, nom, description, categorie FROM Prestataire";
+  if ($stmt = $mysqli->prepare($query)) {
+  
+      /* Ex?cution de la requ?te */
+      $stmt->execute();
+  
+      /* Association des variables de r?sultat */
+      //$stmt->bind_result($id, $nom, $description, $categorie );
+      $colId=0;
+      $colNom=1;
+      $colDescription=2;
+      $colCategorie=3;
+  
+      $results = $stmt->get_result();
+      $prestas = $results->fetch_all();
+      $categories;
+      foreach($prestas as $p){
+        $categories[] = $p[$colCategorie];
+      }
+  
+      $categories = array_unique($categories);
+      /* Lecture des valeurs */
+      foreach($categories as $categorie) {
+        printf('<div class="card text-center container my-5" style="width: auto">
+        <div class="row">
+        <div class="card-body">
+            <h5 class="card-title text-left">'.$categorie.'</h5>
+        </div>
+        
+        <div class="dropdown m-3">
+          <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            Prestataires
+          </button>
+        <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
+  
+            /* pour chaque cat�gorie, afficher le prestataire */
+           foreach($prestas as $p) {
+              if($p[$colCategorie] == $categorie) {
+        printf('
+                
+            <div class="dropdown-item">
+              <label class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample"  aria-haspopup="true" aria-expanded="false" data-offset="10,20"  for="check-presta-'.$p[$colId].'">
+               '.$p[$colNom].'
+              </label>  
+              
+              <div class="collapse" id="descript">
+                  <div class="card card-body">  aria-labelledby="dropdowndesc">'.$p[$colDescription].'</div>
+              </div>
+            </div>
+          
+          ');
+            }
+          }
+            printf('
+            </div>
+        </div>
+        
+        </div>
+      </div>
+        ');      
+      }
+  
+      /* Fermeture de la commande */
+      $stmt->close();
+  }
+  /* Fermeture de la connexion */
+  $mysqli->close();
+  
+}
+  
+
+
