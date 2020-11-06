@@ -19,7 +19,7 @@
   <body>
 
           <?php
-            include('utils.php');
+              include('utils.php');
 
 // // Connexion et s�lection de la base
 // $mysqli = new mysqli('remotemysql.com', 'qgO0M364Or', '7Hyomgetg3','qgO0M364Or');
@@ -55,7 +55,7 @@ $mysqli->close();
 
 <?php master_header();?>
 
-
+<a class="btn btn-primary" href="nosprestataire.php">Tout les prestataires</a>
 
 <?php master_footer();?>
 

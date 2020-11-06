@@ -63,10 +63,7 @@ function master_footer(){
   <div class="container">
     <div class="row"><div class="col-3">
       <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div>
-      <div class="col-2"><button type="submit" class="btn btn-primary">Valider ses choix</button></div>
-      <div class="col-2"><a class="btn btn-primary" href="#" role="button">Ajouter un prestataire</a></div>
-      <div class="col-2"><a class="btn btn-primary" href="#" role="button">Exigeance</a></div>
-      <a href="formulaire.php" class="button">faire un formulaire</a>
+      <a href="formulaire.php" class="btn btn-primary">faire un formulaire</a>
 
       </div>
     </div>
@@ -158,7 +155,7 @@ function multi_cards_prestataire(){
 
 
 
-function multi-prestataire(){
+function multi_prestataire(){
   $mysqli = GetConnection();
   
   // Ex?cution des requ?tes SQL
@@ -185,40 +182,35 @@ function multi-prestataire(){
       $categories = array_unique($categories);
       /* Lecture des valeurs */
       foreach($categories as $categorie) {
-        printf('<div class="card text-center container my-5" style="width: auto">
-        <div class="row">
-        <div class="card-body">
-            <h5 class="card-title text-left">'.$categorie.'</h5>
-        </div>
-        
-        <div class="dropdown m-3">
-          <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Prestataires
-          </button>
-        <div class="dropdown-menu pl-4" aria-labelledby="dropdownMenuOffset">');
-  
-            /* pour chaque cat�gorie, afficher le prestataire */
-           foreach($prestas as $p) {
-              if($p[$colCategorie] == $categorie) {
         printf('
-                
-            <div class="dropdown-item">
-              <label class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample"  aria-haspopup="true" aria-expanded="false" data-offset="10,20"  for="check-presta-'.$p[$colId].'">
-               '.$p[$colNom].'
-              </label>  
-              
-              <div class="collapse" id="descript">
-                  <div class="card card-body">  aria-labelledby="dropdowndesc">'.$p[$colDescription].'</div>
-              </div>
+        <div class="card text-center container my-5" style="width: auto">
+          <div class="row">
+
+            <div class="card-body">
+              <h5 class="card-title text-left">'.$categorie.'</h5>
             </div>
+        
+            
+            <button  type="button" class="btn btn-primary" data-toggle="collapse" href="#descript-'.$categorie.'" role="button" aria-expanded="false" aria-controls="descript">
+              Prestataires </button>
+              <div class="collapse" id="descript-'.$categorie.'" >
+            ');
+  
+                /* pour chaque cat�gorie, afficher le prestataire */
+                foreach($prestas as $p) 
+                {
+                if($p[$colCategorie] == $categorie) {
+                  printf('      
+                    
+                
+                  <div class="card card-body">'.$p[$colDescription].'+'.$p[$colNom].'</div>
+                
           
           ');
             }
           }
             printf('
             </div>
-        </div>
-        
         </div>
       </div>
         ');      
