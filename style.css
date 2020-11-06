@@ -281,6 +281,18 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.bodybodyBanquet {
+    height:1359px;
+    background-image: url('img/banquet.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bodybodyDanse {
+    height:1359px;
+    background-image: url('img/doleances.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /*merryl*/
 

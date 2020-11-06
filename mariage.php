@@ -35,7 +35,7 @@ master_header();?>
     <div class="row">
       <div class="col-1"></div>
       <div class="col lg-6">
-        <a href="index3.html" style="text-decoration:none">
+        <a href="index.html" style="text-decoration:none">
         <div class="mariage1">
         </div>
         <div class="mariage1Text">
@@ -75,7 +75,7 @@ master_header();?>
           </a>
         </div>
         <div class="col">
-          <a href="index3.html" style="text-decoration:none">
+          <a href="albumBanquet.html" style="text-decoration:none">
             <div class="mariage4">
             </div>
             <div class="mariage4Text">
