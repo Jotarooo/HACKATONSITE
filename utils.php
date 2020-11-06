@@ -70,7 +70,7 @@ function navBarCustom(){
           </ul>
         </div>
       </div>
-    </nav>')
+    </nav>');
 }
 
 
@@ -127,37 +127,36 @@ function master_footer(){
   printf('
   <section class="py-5">
     <div class="container">
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="img/logo.png" alt="logo" width="24" height="24">
-        <small class="d-block mb-3 text-muted">&copy; 2020</small>
-      </div>
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
 
-     
-        <div class="col-6 col-md">
-          <h5>Retrouvez nous!</h5>
-          <ul class="list-unstyled text-small">
-            <li><p class="text-black">Marquise Wedding</p></li>
-            <li><p class="text-black">87.26.35.42</p></li>
-            <li><p class="text-black">Taiohae Nuku-Hiva</p></li>
-            <li><a class="text-info" href="#">marquizwedd@mail.com</a></li>
-          
-          </ul>
-      </div> 
-      <div class="col-6 col-md">
-        <h5>Suivez nous!</h5>
-        <ul class="list-unstyled text-small ">
-          <li><a class="text-info text-decoration-none" href="#">Notre page facebook</a></li>
-          <li><a class="text-info text-decoration-none" href="#">Notre Instagram</a></li>
-        </ul>
-      </div>
+        <div class="row">
+          <div class="col-3"><a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div> 
+          <div class="col-3 col-md">
+            <img class="mb-2" src="img/logo.png" alt="logo" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2020</small>
+          </div>
+          <div class="col-3 col-md">
+            <h5>Retrouvez nous!</h5>
+            <ul class="list-unstyled text-small">
+              <li><p class="text-black">Marquise Wedding</p></li>
+              <li><p class="text-black">87.26.35.42</p></li>
+              <li><p class="text-black">Taiohae Nuku-Hiva</p></li>
+              <li><a class="text-info" href="#">marquizwedd@mail.com</a></li>
+            </ul>
+          </div> 
+          <div class="col-3 col-md">
+            <h5>Suivez nous!</h5>
+            <ul class="list-unstyled text-small ">
+              <li><a class="text-info text-decoration-none" href="#">Notre page facebook</a></li>
+              <li><a class="text-info text-decoration-none" href="#">Notre Instagram</a></li>
+            </ul>
+          </div>
 
       
+        </div>
+      </footer>
     </div>
-  </footer>
-</div>
-</section>
+  </section>
   ');
 }
 
@@ -336,7 +335,7 @@ function contentMain(){
       </div>
     </div>
 </section>
-')
+');
 }
   
 
