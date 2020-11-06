@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="ISO 8859-1">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
@@ -127,7 +127,7 @@ function boutonsOrganiserVotreMariage(){
       <div class='row'>
 
         <div class=' col-4'>
-        <a href='index.php' class='btn btn-info '>Retour à l'acceuil</a>
+        <a href='index.php' class='btn btn-info '>Retour a l'acceuil</a>
         </div>
 
         <div class='col-4'>
@@ -156,11 +156,11 @@ function boutonsPresta(){
         </div>
 
         <div class='col-4'>
-        <a href='formulaire.php' class='btn btn-info'>Faire appel à des prestataires</a>
+        <a href='formulaire.php' class='btn btn-info'>Faire appel a des prestataires</a>
         </div>
 
         <div class=' col-4'>
-        <a href='index.php' class='btn btn-info'>Retour à l'acceuil</a>
+        <a href='index.php' class='btn btn-info'>Retour a l'acceuil</a>
         </div>
 
       </div>

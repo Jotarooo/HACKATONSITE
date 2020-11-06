@@ -51,7 +51,7 @@
     
       <div class="col-1"></div>
         <div class="col">
-          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+          <a href="#" style="text-decoration:none">
           <div class="soiree">
           </div>
           <div class="soireeText">
@@ -60,7 +60,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+          <a href="#" style="text-decoration:none">
           <div class="anniv">
           </div>
           <div class="annivText">
