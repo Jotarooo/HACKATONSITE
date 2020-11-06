@@ -47,7 +47,7 @@ master_header();?>
         </a>
       </div>
       <div class="col lg-6">
-        <a href="index3.html" style="text-decoration:none">
+        <a href="AlbumBouquet.html" style="text-decoration:none">
           <div class="mariage2">
           </div>
           <div class="mariage2Text">
