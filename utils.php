@@ -171,7 +171,7 @@ function boutonsPresta(){
       <div class='row '>
 
         <div class=' col-2'>
-        <a href='doleance.html' class='btn btn-info boutonsMariages '>Doleance</a>
+        <a href='doleances.html' class='btn btn-info boutonsMariages '>Doleance</a>
         </div>
 
         <div class='col-3'>
