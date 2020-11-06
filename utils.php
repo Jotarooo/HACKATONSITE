@@ -29,18 +29,66 @@ function GetAllPrestataire() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//navbar
+function navBarCustom(){
+  print('
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>')
+}
+
+
 //header. touchable
 function master_header(){
 
-  printf( '<div id="hautDePage" class="container h1 masthead header pt-3">
-  <div class="row"> 
-      <div class = "h1 col- ">Logo</div>  
+  printf( '
+  <div id="hautDePage" class="container h1 masthead header pt-3">
+    <div class="row"> 
+
+      <div class = "h1 col-3">Logo</div>  
 
       <div class="titrePrincipal col-11 text-center">
           <p> Markiz Wedding </p>
       </div>
-  </div>
-</div>');
+
+    </div>
+  </div>');
 
 }
 
@@ -64,7 +112,6 @@ function boutonsRepetitif(){
     <div class="container">
       <div class="row col-3">
 
-      <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a>
       <a href="#hautDePage" class="btn ">Haut de page</a>
 
       </div>
@@ -72,26 +119,45 @@ function boutonsRepetitif(){
 
   ');
 
-  }
+}
 
 
 //footer
 function master_footer(){
   printf('
-  <div class="container masterfooter">
-    <div class="row ">
-      <div class="col-3">
-        <a href="formulaire.php" class="btn btn-primary">Faire un formulaire</a>
+  <section class="py-5">
+    <div class="container">
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="img/logo.png" alt="logo" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; 2020</small>
       </div>
-    </div>
-');
-  printf('
-    <div class="footer container mt-5 py-5">
-      <div class="row">
-        <div class="h1 col-6 ">Footer</div>
+
+     
+        <div class="col-6 col-md">
+          <h5>Retrouvez nous!</h5>
+          <ul class="list-unstyled text-small">
+            <li><p class="text-black">Marquise Wedding</p></li>
+            <li><p class="text-black">87.26.35.42</p></li>
+            <li><p class="text-black">Taiohae Nuku-Hiva</p></li>
+            <li><a class="text-info" href="#">marquizwedd@mail.com</a></li>
+          
+          </ul>
+      </div> 
+      <div class="col-6 col-md">
+        <h5>Suivez nous!</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-info text-decoration-none" href="#">Notre page facebook</a></li>
+          <li><a class="text-info text-decoration-none" href="#">Notre Instagram</a></li>
+        </ul>
       </div>
+
+      
     </div>
-  </div>
+  </footer>
+</div>
+</section>
   ');
 }
 
@@ -188,6 +254,89 @@ function multi_cards_prestataire(){
   /* Fermeture de la connexion */
   $mysqli->close();
   
+}
+
+
+function contentMain(){
+  print('
+  <section class="py-5">
+  <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row">
+
+          <!--case Mariage-->
+          
+          <div class="col-md-5" >
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"> <rect width="100%" height="100%" fill="#17a2b8"/><text x="50%" y="50%" fill="#eceeef">unnamed.png</text></svg>
+              <div class="card-body">
+                <p class="card-text">Découvrez le mariage traditionel.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-info">Organiser votre mariage</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"></div>
+
+          <!--case lune de miel-->
+          <div class="col-md-5" >
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"> <rect width="100%" height="100%" fill="#ffc107"/><text x="50%" y="50%" fill="#eceeef">unnamed.png</text></svg>
+              <div class="card-body">
+                <p class="card-text">Découvrez le mariage traditionel.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-warning">Organiser votre mariage</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <!--case soirée-->
+          <div class="col-md-5" >
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"> <rect width="100%" height="100%" fill="#dc3545"/><text x="50%" y="50%" fill="#eceeef">unnamed.png</text></svg>
+              <div class="card-body">
+                <p class="card-text">Découvrez le mariage traditionel.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-danger">Organiser votre mariage</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-md-2"></div>
+
+
+          <!--case soirée-->
+          <div class="col-md-5" >
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"> <rect width="100%" height="100%" fill="#28a745"/><text x="50%" y="50%" fill="#eceeef">unnamed.png</text></svg>
+              <div class="card-body">
+                <p class="card-text">Découvrez le mariage traditionel.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-success">Organiser votre mariage</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+')
 }
   
 
