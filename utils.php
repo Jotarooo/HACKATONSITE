@@ -99,17 +99,23 @@ function navBarCustom(){
 function master_header(){
 
   printf( '
-  <div id="hautDePage" class="container h1 masthead header pt-3">
-    <div class="row"> 
-
-      <div class = "h1 col-3">Logo</div>  
-
-      <div class="titrePrincipal col-11 text-center">
-          <p> Markiz Wedding </p>
+  <header class="headerHeader">
+  <div class="containerh-fluid">
+    <div class="row h-100 align-items-center">
+      <div class="col-3">
+        <img class="logo" src="img/logo.png" alt="logo">
       </div>
-
+        <div class="col-9">
+          <div class="titreNom titre">
+            Marquises Wedding
+          </div>
+        </div>
+          <div class="sloganNom slogan">
+            Vivez Vos RÃªves aux Marquises
+          </div>
     </div>
-  </div>');
+  </div>
+</header>');
 
 }
 
@@ -142,18 +148,15 @@ function boutonsAcceuil(){
     <div class='container'>
       <div class='row'>
 
-        <div class='col-4 '>
-        <a href='#hautDePage' class='btn '>Haut de page</a>
+        <div class='col-6 '>
+        <a href='#hautDePage' class='btn btn-danger '>Haut de page</a>
         </div>
 
-        <div class='col-4'>
-        <a href='nosprestataire.php' class='btn '>Voir nos prestataires</a>
+        <div class='col-6'>
+        <a href='nosprestataire.php' class='btn btn-danger '>Voir nos prestataires</a>
         </div>
 
-        <div class='col-4'>
-        <a href='index.php' class='btn '>Retour à l'acceuil</a>
-        </div>
-
+        
       </div>
       
     </div>
@@ -171,7 +174,6 @@ function master_footer(){
         ');
         printf('<div class="footer container mt-5 py-5">
         <div class="row">
-        <div class="h1 col-3 ">Footer</div> 
           <div class="col-3 col-md">
             <img class="mb-2" src="img/logo.png" alt="logo" width="24" height="24">
             <small class="d-block mb-3 text-muted">&copy; 2020</small>
