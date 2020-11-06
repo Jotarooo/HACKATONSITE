@@ -293,6 +293,30 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.bodybodyVoiture {
+    height:1359px;
+    background-image: url('img/voiture.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bodybodyDecoration {
+    height:1359px;
+    background-image: url('img/Decoration.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bodybodyMusique {
+    height:1359px;
+    background-image: url('img/musique.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bodybodyBouquet {
+    height:1359px;
+    background-image: url('img/bouquet.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /*merryl*/
 
