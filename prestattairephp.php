@@ -8,11 +8,9 @@
 
     <title>Marquise Wedding</title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
   </head>
 
@@ -21,13 +19,7 @@
           <?php
               include('utils.php');
 
-// // Connexion et s�lection de la base
-// $mysqli = new mysqli('remotemysql.com', 'qgO0M364Or', '7Hyomgetg3','qgO0M364Or');
-// /* V�rifie la connexion */
-// if (mysqli_connect_errno()) {
-//     printf("�chec de la connexion : %s\n", mysqli_connect_error());
-//     exit();
-// }
+
 
 $mysqli = GetConnection();
 
