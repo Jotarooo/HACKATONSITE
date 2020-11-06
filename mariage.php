@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Rum+Raisin" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <title>Marquises Wedding</title>
+  <title>Mariage</title>
 </head>
 <body>
  
@@ -30,48 +30,94 @@
     </div>
   </header>
   <!--body-->
-<div class="bodybody">
+<div class="bodybodymariage">
   <div class="container-fluid">
-
+    <div class="row">
+      <div class="col-12">
+      <div class="titleMariage">
+        Organiser votre Mariage
+      </div>
+     
+    </div>
+  </div> 
     <div class="row">
       <div class="col-1"></div>
       <div class="col lg-6">
-        <a href="mariage.html" style="text-decoration:none">
-        <div class="mariage">
+        <a href="index3.html" style="text-decoration:none">
+        <div class="mariage1">
         </div>
-        <div class="mariageText">
-        Organisez votre Mariage
+        <div class="mariage1Text">
+          <p>Pouvoir choisir la décoration de vos rêves, 
+          c'est choisir les meilleurs décorateurs 
+          des Marquises.</p>
+          
         </div>
         </a>
       </div>
       <div class="col lg-6">
         <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
-        <div class="luneDeMiel">
-        </div>
-        <div class="luneDeMielText">
-          Organisez votre Lune de Miel
+          <div class="mariage2">
+          </div>
+          <div class="mariage2Text">
+          <p>Avoir les plus beaux bouquets à son mariage 
+          c'est avoir les plus beaux fleuristes 
+          des Marquises.</p>
+          
         </div>
         </a>
       </div>
     </div>
+
     <div class="row">
-    
       <div class="col-1"></div>
         <div class="col">
           <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
-          <div class="soiree">
-          </div>
-          <div class="soireeText">
-          Organisez votre Soirée
+            <div class="mariage3">
+            </div>
+            <div class="mariage3Text">
+            <p> Pouvoir danser et partager son << oui >>
+            en musique, c'est avoir les plus bons musiciens 
+            de Marquises.</p>
+            
           </div>
           </a>
         </div>
         <div class="col">
           <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
-          <div class="anniv">
+            <div class="mariage4">
+            </div>
+            <div class="mariage4Text">
+            <p>Avoir les plus bons plats à son banquet de mariage,
+            c'est avoir les meilleurs traiteurs des Marquises.</p>
+            
           </div>
-          <div class="annivText">
-            Organisez votre Anniversaire
+          </a>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1"></div>
+        <div class="col">
+          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+            <div class="mariage5">
+            </div>
+            <div class="mariage5Text">
+            <p>Pouvoir rêver et faire rêver en danse,
+            c'est avoir le meilleur groupe de danse
+            des Marquises.</p>
+            
+          </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
+            <div class="mariage6">
+            </div>
+            <div class="mariage6Text">
+            <p>Avoir les plus beaux transports le jour de son mariage,
+            c'est avoir les plus belles voiture
+            des Marquises.</p>
+            
           </div>
           </a>
         </div>
@@ -89,6 +135,7 @@
         <div class="col-3 col-md">
         <div class="titreFooter1col">
           Marquises Wedding
+          <img src="/img/souligne.png" alt="">
         </div>
         </div>
         <div class="col-3">
