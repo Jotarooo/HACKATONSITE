@@ -5,12 +5,12 @@
 * {
     margin: 0;
     padding: 0;
-}
+} 
 
 html {
     height: 100%;
-    background: #6441A5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6441A5, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+    background: #eb96b2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #796300, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
 }
 
 body {
@@ -39,6 +39,10 @@ body {
     position: relative;
 }
 
+#msform label{
+    margin-right:100%;
+}
+
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
     display: none;
@@ -50,7 +54,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 0px;
     margin-bottom: 10px;
-    width: 100%;
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
@@ -61,7 +64,7 @@ body {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #ee0979;
+    border: 1px solid #09eea9;
     outline-width: 0;
     transition: All 0.5s ease-in;
     -webkit-transition: All 0.5s ease-in;
@@ -132,7 +135,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 9px;
-    width: 33.33%;
+    width: 50%;
     float: left;
     position: relative;
     letter-spacing: 1px;
