@@ -36,7 +36,7 @@
 
     $sql = "";
     foreach($prestaIds as $pid){
-      $sql .= "INSERT INTO DevisPrestataire (devisid,prestataireid) VALUES ($devisId,$pid);";
+      $sql .= "INSERT INTO DevisPrestataire(devisid,prestataireid) VALUES ($devisId,$pid);";
     }
 
     $mysqli->multi_query($sql);

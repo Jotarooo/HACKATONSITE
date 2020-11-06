@@ -219,7 +219,7 @@ function multi_cards_prestataire(){
   $mysqli = GetConnection();
   
   // Ex?cution des requ?tes SQL
-  $query = "SELECT id, nom, description, categorie FROM Prestataire";
+  $query = "SELECT id, nom,categorie FROM Prestataire";
   if ($stmt = $mysqli->prepare($query)) {
   
       /* Ex?cution de la requ?te */
@@ -229,8 +229,7 @@ function multi_cards_prestataire(){
       //$stmt->bind_result($id, $nom, $description, $categorie );
       $colId=0;
       $colNom=1;
-      $colDescription=2;
-      $colCategorie=3;
+      $colCategorie=2;
   
       $results = $stmt->get_result();
       $prestas = $results->fetch_all();
