@@ -90,7 +90,7 @@ master_header();?>
     <div class="row">
       <div class="col-1"></div>
         <div class="col">
-          <a href="index3.html" style="text-decoration:none">
+          <a href="AlbumDanse.html" style="text-decoration:none">
             <div class="mariage5">
             </div>
             <div class="mariage5Text">
