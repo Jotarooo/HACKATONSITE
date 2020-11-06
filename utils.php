@@ -123,19 +123,19 @@ function master_header(){
 
 function boutonsOrganiserVotreMariage(){
   printf("
-    <div class='container my-6'>
+    <div class='container my-5'>
       <div class='row'>
 
         <div class=' col-4'>
-        <a href='index.php' class='btn btn-info '>Retour a l'acceuil</a>
-        </div>
-
-        <div class='col-4'>
-        <a href='formulaire.php' class='btn btn-info'>Ajouter une prestation</a>
+        <a href='index.php' class='btn btn-info boutonsMariages'>Retour a l'acceuil</a>
         </div>
 
         <div class=' col-4'>
-        <a href='nosprestataire.php' class='btn btn-info'>Consulter la liste des prestataires</a>
+        <a href='formulaire.php' class='btn btn-info boutonsMariages'>Ajouter une prestation</a>
+        </div>
+
+        <div class=' col-4'>
+        <a href='nosprestataire.php' class='btn btn-info boutonsMariages'>Consulter la liste des prestataires</a>
         </div>
 
       </div>
@@ -151,11 +151,11 @@ function boutonsFormulaire(){
       <div class='row'>
 
         <div class=' col-6'>
-        <a href='index.php' class='btn btn-info '>Retour a l'acceuil</a>
+        <a href='index.php' class='btn btn-info boutonsMariages'>Retour a l'acceuil</a>
         </div>
 
         <div class=' col-3'>
-        <a href='nosprestataire.php' class='btn btn-info'>Consulter la liste des prestataires</a>
+        <a href='nosprestataire.php' class='btn btn-info boutonsMariages'>Consulter la liste des prestataires</a>
         </div>
 
       </div>
@@ -167,19 +167,19 @@ function boutonsFormulaire(){
 
 function boutonsPresta(){
   printf("
-    <div class='container'>
+    <div class='container  my-5'>
       <div class='row '>
 
-        <div class=' col-4'>
-        <a href='#hautDePage' class='btn btn-info '>Haut de page</a>
+        <div class=' col-2'>
+        <a href='doleance.html' class='btn btn-info boutonsMariages '>Doleance</a>
         </div>
 
-        <div class='col-4'>
-        <a href='formulaire.php' class='btn btn-info'>Faire appel a des prestataires</a>
+        <div class='col-3'>
+        <a href='formulaire.php' class='btn btn-info boutonsMariages'>Faire appel a des prestataires</a>
         </div>
 
-        <div class=' col-4'>
-        <a href='index.php' class='btn btn-info'>Retour a l'acceuil</a>
+        <div class=' col-3'>
+        <a href='index.php' class='btn btn-info boutonsMariages'>Retour a l'acceuil</a>
         </div>
 
       </div>
@@ -193,12 +193,12 @@ function boutonsAcceuil(){
     <div class='container'>
       <div class='row'>
 
-        <div class='col-6 '>
-        <a href='inscription.html' class='btn btn-success btn-lg'>S'inscrire</a>
+        <div class='col-8 '>
+        <a href='inscription.html' class='btn btn-success btn-lg space'>S'inscrire</a>
         </div>
 
-        <div class='col-6'>
-        <a href='#' class='btn btn-success btn-lg'>Bienvenue sur notre site!</a>
+        <div class='col-4'>
+        <a href='#' class='btn btn-success btn-lg space'>Bienvenue sur notre site!</a>
         </div>
         
       </div>
