@@ -30,13 +30,17 @@ function GetAllPrestataire() {
 
 function master_header(){
 
-  printf( '<div class="container header pt-3">
-  <div class="row"> 
-      <div class = "h1 col- ">Logo</div>  
-
-      <div class="h1 col-11 text-center">
-          <p>Markiz Wedding</p>
+  printf( ' <div class="container-fluid h-100">
+  <div class="row h-100 align-items-center">
+      
+    <div class="col-2">
+      <img class="logo" src="img/logo.png" alt="logo"></div>
+      <div class="col-10">
+      <h1 class="font-weight">Marquises Wedding</h1>
       </div>
+      <h2 class="font-weight-light">Vivez Vos Rêves aux Marquises</p>
+        
+    
   </div>
 </div>');
 
