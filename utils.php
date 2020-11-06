@@ -1,9 +1,9 @@
 <?php
 
+
+//debut pas touche!!
 function GetConnection() {
-    // Connexion et sï¿½lection de la base
     $mysqli = new mysqli('remotemysql.com', 'qgO0M364Or', '7Hyomgetg3','qgO0M364Or');
-    /* Vï¿½rifie la connexion */
     if (mysqli_connect_errno()) {
         printf("ï¿½chec de la connexion : %s\n", mysqli_connect_error());
         exit();
@@ -11,71 +11,109 @@ function GetConnection() {
 
     return $mysqli;
 }
-
 function GetAllPrestataire() {
     $mysqli = GetConnection();
     $query = "SELECT nom, url, description FROM Prestataire";
 
     if ($stmt = $mysqli->prepare($query)) {
 
-        /* Exï¿½cution de la requï¿½te */
         $stmt->execute();
     
-        /* Association des variables de rï¿½sultat */
         $stmt->bind_result($nom, $url, $description);
     }
     
     return $stmt-> fetch_array();
 }
+//fin du pastouche.
 
+
+
+
+//header. touchable
 function master_header(){
 
-  printf( '<div class="container masthead header pt-3">
+  printf( '<div id="hautDePage" class="container h1 masthead header pt-3">
   <div class="row"> 
       <div class = "h1 col- ">Logo</div>  
 
       <div class="titrePrincipal col-11 text-center">
-          <p >Markiz Wedding</p>
+          <p> Markiz Wedding </p>
       </div>
   </div>
 </div>');
 
 }
 
+//quand le devis est fini
 function alertdevis(){
   printf('
-
-  <div class="alert alert-success" role="alert">
+  <div class="alert alert-success" styles="width=150px; height=100px" role="alert">
     <h4 class="alert-heading">Votre devis à bien été enregistré</h4>
     <p>Vous recevrez le devis dans quelques jours.Vérifiez votre boîte mail ;)</p>
     <hr>
     <p class="mb-0">Bonne journée.</p>
-    <a class="btn btn-info" href="nosprestataires.php">Aller voir la page des prestataires</a>
+    <a class="btn btn-info" href="nosprestataire.php">Aller voir la page des prestataires</a>
     <a class="btn btn-info" href="index.php">Acceuil</a>
 
   </div>
   ');
 }
 
-
-function master_footer(){
+function boutonsRepetitif(){
   printf('
-  <div class="container masterfooter">
-    <div class="row "><div class="col-3">
-      <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div>
-      <a href="formulaire.php" class="btn btn-primary">faire un formulaire</a>
+    <div class="container">
+      <div class="row col-3">
+
+      <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a>
+      <a href="#hautDePage" class="btn ">Haut de page</a>
 
       </div>
     </div>
+
+  ');
+
+  }
+
+
+//footer
+function master_footer(){
+  printf('
+  <div class="container masterfooter">
+    <div class="row ">
+      <div class="col-3">
+        <a href="formulaire.php" class="btn btn-primary">Faire un formulaire</a>
+      </div>
+    </div>
 ');
-  printf('<div class="footer container mt-5 py-5">
-  <div class="row">
-    <div class="h1 col-6 ">Footer</div>
+  printf('
+    <div class="footer container mt-5 py-5">
+      <div class="row">
+        <div class="h1 col-6 ">Footer</div>
+      </div>
+    </div>
   </div>
-</div>
   ');
 }
 
+
+//fin des codes touchables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//pas touche ici!
 
 function multi_cards_prestataire(){
   $mysqli = GetConnection();
@@ -195,7 +233,7 @@ function multi_prestataire(){
                 {
                 if($p[$colCategorie] == $categorie) {
                   printf('   
-                  <div class="card card-body">'.$p[$colNom].' '. $p[$colDescription].'</div>
+                  <div class="card card-body"><div class="text-primary">'.$p[$colNom].':</div> '. $p[$colDescription].'</div>
           ');
             }
           }
