@@ -145,6 +145,25 @@ function boutonsOrganiserVotreMariage(){
 }
 
 
+function boutonsFormulaire(){
+  printf("
+    <div class='container my-5'>
+      <div class='row'>
+
+        <div class=' col-6'>
+        <a href='index.php' class='btn btn-info '>Retour a l'acceuil</a>
+        </div>
+
+        <div class=' col-3'>
+        <a href='nosprestataire.php' class='btn btn-info'>Consulter la liste des prestataires</a>
+        </div>
+
+      </div>
+    </div>
+
+  ");
+}
+
 
 function boutonsPresta(){
   printf("
@@ -234,7 +253,7 @@ function master_footer(){
         <a href="https://www.facebook.com" title="facebook">
           <img src="/img/facebookpng.jpg" alt="facebook">
         </a>
-        <a href="https://www.instagram.com/?hl=fr" title="facebook">
+        <a href="https://www.instagram.com/?hl=fr" title="instagram">
           <img src="/img/instagram.png" alt="instagram">
         </a>
         </div>
