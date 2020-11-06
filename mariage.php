@@ -168,7 +168,7 @@
           <img src="/img/facebookpng.jpg" alt="facebook">
         </a>
         <a href="https://www.instagram.com/?hl=fr" title="facebook">
-          <img src="/img/facebookpng.jpg" alt="instagram">
+          <img src="/img/instagram.png" alt="instagram">
         </a>
         </div>
         </div>
