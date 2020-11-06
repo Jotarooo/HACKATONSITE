@@ -8,11 +8,13 @@
   <title>Markiz Wedding</title>
 </head>
 <body>
+  <img src="/img/header.png" alt="">
   <div class="containerh-fluid">
     <div class="row">
-      <h1>Markiz Wedding</h1>
+      
       <div class="col-12">
     </div>
+    <h1>Marquises Wedding</h1>
     <h2>Vivez Vos Rêves aux Marquises</h1>
       
     </div>

@@ -1,21 +1,21 @@
 
 h1 {
-    font: #EBF500;
-    font-family: Edwardian Script ITC;
-    font-size: 159px;
+
     color: #EBF500;
+    font-family: Edwardian Script ITC;
+    font-size: 180px;
     border: #EBA00B;
-    text-shadow: #EBF500;
+    
 }
 h2 {
-    font: #EBF500;
+
+    color: #EBF500;
     font-family: Edwardian Script ITC;
-    font-size: 159px;
+    font-size: 150px;
     border: #EBA00B;
-    text-shadow: #EBF500;
-    width: 958px;
-    height: 187px;
+    
 }
+
 .containerh-fluid {
     background-image: url(/img/header.png);
     background-size: cover;
@@ -34,12 +34,7 @@ h2 {
     background-size: cover;
 }
 
-.row{
-    top: 0px;
-    height: 645px;
-    width: 1523px;
-    
-}
+
 .imgheader-fluid {
     margin-top: 0%;
     margin-left: 0%;
@@ -68,16 +63,13 @@ h2 {
     position: absolute;
 }
 
-header{
-   
-    background-image: url('/img/mains.jpg');
-}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('img/9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-img {
-    top: 0px;
-    left: 0px;
-    
-}
-
-
-
+  
