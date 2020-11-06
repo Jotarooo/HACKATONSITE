@@ -153,7 +153,7 @@ function boutonsAcceuil(){
         </div>
 
         <div class='col-6'>
-        <a href='nosprestataire.php' class='btn btn-danger '>Bienvenue sur notre page!</a>
+        <p class='text-'>Bienvenue sur notre page!</p>
         </div>
         
       </div>
