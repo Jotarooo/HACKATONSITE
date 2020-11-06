@@ -175,7 +175,7 @@ function boutonsAcceuil(){
       <div class='row'>
 
         <div class='col-6 '>
-        <a href='#' class='btn btn-success btn-lg'>S'inscrire</a>
+        <a href='inscription.php' class='btn btn-success btn-lg'>S'inscrire</a>
         </div>
 
         <div class='col-6'>
