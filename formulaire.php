@@ -54,7 +54,7 @@
           </div>
 
           <div class="form-group">
-            <label for="exigeance_client">Exigeance</label>
+            <label for="exigeance_client">Exigence</label>
             <input required id="exigeance_client" name="exigence" class="form-control" placeholder="Veuillez entrer votre adresse mail">
           </div>
 
