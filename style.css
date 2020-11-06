@@ -14,9 +14,10 @@
 }
 .titreNom {
     color: #EBF500;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 180px;
-    -webkit-text-stroke: 3px #EBA00B;
+    -webkit-text-stroke: 2px #EBA00B;
+    font: bold;
     height: 187px;
 }
 .titre {
@@ -24,9 +25,9 @@
     margin-left: 0px;
 }
 .sloganNom {
-    -webkit-text-stroke: 3px #EBA00B;
+    -webkit-text-stroke: 2px #EBA00B;
     color: #EBF500;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 150px;
 }
 .slogan {
@@ -45,24 +46,24 @@
     background-size: cover;
 }
 .containerf-fluid li {
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 25px;
     text-align: center;
     color: yellow;
 }
 .titreFooter1col {
     color:#EBF500;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 85px;
 }
 .titreFooter2col {
     color:white;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 65px;
 }
 .titreFooter3col {
     color:white;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 65px;
 }
 .petitpetittransparent {
@@ -74,7 +75,7 @@
 }
 .centrerText2 {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color:#EBF500;
     font-size: 35px;
 }
@@ -104,7 +105,7 @@
 }
 .mariageText {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 75px;
     width: 589px;
@@ -121,7 +122,7 @@
 }
 .luneDeMielText {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 80px;
     width: 589px;
@@ -137,7 +138,7 @@
 }
 .soireeText {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 75px;
     width: 589px;
@@ -154,7 +155,7 @@
 }
 .annivText {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 80px;
     width: 589px;
@@ -171,7 +172,7 @@
 }
 .mariage1Text {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 55px;
     width: 555px;
@@ -187,7 +188,7 @@
 }
 .mariage2Text {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 55px;
     width: 555px;
@@ -203,7 +204,7 @@
 }
 .mariage3Text {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 55px;
     width: 555px;
@@ -219,7 +220,7 @@
 }
 .mariage4Text {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 55px;
     width: 555px;
@@ -235,7 +236,7 @@
 }
 .mariage5Text {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 55px;
     width: 555px;
@@ -251,7 +252,7 @@
 }
 .mariage6Text {
     text-align: center;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     color: black;
     font-size: 55px;
     width: 555px;
@@ -260,7 +261,7 @@
 }
 .titleMariage {
     color: black;
-    font-family: Edwardian Script ITC;
+    font-family: 'Tangerine', serif;
     font-size: 105px;
     font-weight: bold;
     text-align: center;
