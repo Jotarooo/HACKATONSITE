@@ -109,23 +109,6 @@ function master_header(){
 }
 
 
-
-
-//quand le devis est fini
-function alertdevis(){
-  printf('
-  <div class="alert alert-success" styles="width=150px; height=100px" role="alert">
-    <h4 class="alert-heading">Votre devis à bien été enregistré</h4>
-    <p>Vous recevrez le devis dans quelques jours.Vérifiez votre boîte mail ;)</p>
-    <hr>
-    <p class="mb-0">Bonne journée.</p>
-    <a class="btn btn-info" href="nosprestataire.php">Aller voir la page des prestataires</a>
-    <a class="btn btn-info" href="index.php">Acceuil</a>
-
-  </div>
-  ');
-}
-
 function boutonsPresta(){
   printf("
     <div class='container'>
