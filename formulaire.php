@@ -28,10 +28,9 @@
 
           <?php multi_cards_prestataire();?>
 
-
-
           <input type="button" name="next" class="next action-button" value="Next"/>
-
+          
+          <div class="col-12 mx-3"><?php boutonsFormulaire(); ?></div>
         </fieldset>
 
 
@@ -39,40 +38,41 @@
           <h2>Informations clients</h2>
              <div><h1>Devis</h1></div>
 
-        <div class="form-group">
-          <label for="nom_client">Nom</label>
-          <input required id="nom_client" name="nom"  class="form-control" placeholder="Veuillez entrer votre Nom">
-        </div>
+          <div class="form-group">
+            <label for="nom_client">Nom</label>
+            <input required id="nom_client" name="nom"  class="form-control" placeholder="Veuillez entrer votre Nom">
+          </div>
 
-        <div class="form-group">
-          <label for="prenom_client">Prenom</label>
-          <input required id="prenom_client" name="prenom" class="form-control" placeholder="Veuillez entrer votre prenom">
-        </div>
-       
-        <div class="form-group">
-          <label for="email_client">Email</label>
-          <input required id="email_client" type="email" name="email" class="form-control" placeholder="Veuillez entrer votre adresse mail">
-        </div>
+          <div class="form-group">
+            <label for="prenom_client">Prenom</label>
+            <input required id="prenom_client" name="prenom" class="form-control" placeholder="Veuillez entrer votre prenom">
+          </div>
 
-        <div class="form-group">
-          <label for="exigeance_client">Exigeance</label>
-          <input required id="exigeance_client" name="exigence" class="form-control" placeholder="Veuillez entrer votre adresse mail">
-        </div>
+          <div class="form-group">
+            <label for="email_client">Email</label>
+            <input required id="email_client" type="email" name="email" class="form-control" placeholder="Veuillez entrer votre adresse mail">
+          </div>
 
-        <div class="form-group">
-          <label for="numero_client">Numero</label>
-          <input required id="numero_client" name="numero" class="form-control" placeholder="Numero de telephone">
-        </div>
+          <div class="form-group">
+            <label for="exigeance_client">Exigeance</label>
+            <input required id="exigeance_client" name="exigence" class="form-control" placeholder="Veuillez entrer votre adresse mail">
+          </div>
 
-        <div class="form-group">
-          <label for="date_client">Date</label>
-          <input required id="date_client" name="date" type="date" class="form-control" placeholder="Date">
-        </div>
-        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-        <button type="submit" class="btn btn-primary">Envoyer le devis</button>    
+          <div class="form-group">
+            <label for="numero_client">Numero</label>
+            <input required id="numero_client" name="numero" class="form-control" placeholder="Numero de telephone">
+          </div>
+
+          <div class="form-group">
+            <label for="date_client">Date</label>
+            <input required id="date_client" name="date" type="date" class="form-control" placeholder="Date">
+          </div>
+          <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+          <button type="submit" class="btn btn-primary">Envoyer le devis</button>  
         </fieldset>
       </form>
     </div>
+        
   </div>
 </div>
 
