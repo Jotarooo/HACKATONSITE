@@ -10,7 +10,6 @@
   <title>Marquises Wedding</title>
 </head>
 <body>
-    <?php require('utils.php')?>
  
   <!-- header -->
  <?php require('utils.php');
@@ -22,6 +21,7 @@
 
   <!--Content-->
 <div class="bodybody">
+
     <?php boutonsAcceuil()?>
 
   <div class="container-fluid">

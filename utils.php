@@ -135,7 +135,7 @@ function boutonsOrganiserVotreMariage(){
         </div>
 
         <div class=' col-4'>
-        <a href='nosprestataires.php' class='btn btn-info'>Consulter la liste des prestataires</a>
+        <a href='nosprestataire.php' class='btn btn-info'>Consulter la liste des prestataires</a>
         </div>
 
       </div>
