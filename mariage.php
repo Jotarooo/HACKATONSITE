@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://fonts.googleapis.com/css?family=Rum+Raisin" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
   <title>Mariage</title>
+
 </head>
+
 <body>
- 
-  <!-- header -->
-  <header class="headerHeader">
-    <div class="containerh-fluid">
-      <div class="row h-100 align-items-center">
-        <div class="col-3">
-          <img class="logo" src="img/logo.png" alt="logo">
-        </div>
-          <div class="col-9">
-            <div class="titreNom titre">
-              Marquises Wedding
-            </div>
-          </div>
-            <div class="sloganNom slogan">
-              Vivez Vos Rêves aux Marquises
-            </div>
-      </div>
-    </div>
-  </header>
-  <!--body-->
+
+<?php require('utils.php');
+
+master_header();?>
+
 <div class="bodybodymariage">
   <div class="container-fluid">
     <div class="row">
@@ -43,7 +35,7 @@
     <div class="row">
       <div class="col-1"></div>
       <div class="col lg-6">
-        <a href="index3.html" style="text-decoration:none">
+        <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
         <div class="mariage1">
         </div>
         <div class="mariage1Text">
@@ -55,7 +47,7 @@
         </a>
       </div>
       <div class="col lg-6">
-        <a href="index3.html" style="text-decoration:none">
+        <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
           <div class="mariage2">
           </div>
           <div class="mariage2Text">
@@ -71,7 +63,7 @@
     <div class="row">
       <div class="col-1"></div>
         <div class="col">
-          <a href="index3.html" style="text-decoration:none">
+          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
             <div class="mariage3">
             </div>
             <div class="mariage3Text">
@@ -83,7 +75,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="index3.html" style="text-decoration:none">
+          <a href="http://localhost/HACKATONSITE/index3.html" style="text-decoration:none">
             <div class="mariage4">
             </div>
             <div class="mariage4Text">
@@ -125,59 +117,16 @@
   </div>  
 </div>
 
-  <!--footer-->
-  <div class="containerf-fluid ">
-  <footer>
-      <div class="row align-items-top">
-        <div class="col-1">
+<?php master_footer();?>
 
-        </div>
-        <div class="col-3 col-md">
-        <div class="titreFooter1col">
-          Marquises Wedding
-        </div>
-        </div>
-        <div class="col-3">
-        <div class="titreFooter2col">
-          <div class="petitpetittransparent">
-            kfkfkfkfk
-          </div>
-          <div class="centrerText">
-          Retrouvez nous
-          </div>
-        </div>
-        <div class="centrerText2">
-            <strong> Marquises Wedding <br></strong>
-            <strong>87.26.35.62 <br></strong>
-            <strong>Taiohae Nuku-Hiva <br></strong>
-            <strong>MarkizWedd@gmail.com <br><br></strong>
-        </div>
-        
-      </div>
-      <div class="col-3">
-        <div class="titreFooter3col">
-          <div class="petitpetittransparent">
-            kfkfkfkfk
-          </div>
-          <div class="centrerText">
-          Suivez nous sur
-          </div>
-        </div>
-        <div class="centrerText">
-        <a href="https://www.facebook.com" title="facebook">
-          <img src="/img/facebookpng.jpg" alt="facebook">
-        </a>
-        <a href="https://www.instagram.com/?hl=fr" title="facebook">
-          <img src="/img/instagram.png" alt="instagram">
-        </a>
-        </div>
-        </div>
-        <div class="col-1">
+ 
+  
 
-        </div>
-      </div>
-  </footer>
-</div>
+
+<script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="form.js"></script>
 
 </body>
 

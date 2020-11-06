@@ -40,7 +40,7 @@ function GetAllPrestataire() {
     
     return $stmt-> fetch_array();
 }
-//fin du pastouche.
+//fin du pas touche.
 
 
 
@@ -95,6 +95,7 @@ function navBarCustom(){
 
 
 
+
 //header. touchable
 function master_header(){
 
@@ -118,6 +119,31 @@ function master_header(){
 </header>');
 
 }
+
+
+function boutonsOrganiserVotreMariage(){
+  printf("
+    <div class='container'>
+      <div class='row'>
+
+        <div class=' col-4'>
+        <a href='index.php' class='btn btn-info '>Retour à l'acceuil</a>
+        </div>
+
+        <div class='col-4'>
+        <a href='formulaire.php' class='btn btn-info'>Ajouter une prestation</a>
+        </div>
+
+        <div class=' col-4'>
+        <a href='nosprestataires.php' class='btn btn-info'>Consulter la liste des prestataires</a>
+        </div>
+
+      </div>
+    </div>
+
+  ");
+}
+
 
 
 function boutonsPresta(){
@@ -149,11 +175,11 @@ function boutonsAcceuil(){
       <div class='row'>
 
         <div class='col-6 '>
-        <a href='#' class='btn btn-danger '>S'inscrire</a>
+        <a href='#' class='btn btn-success btn-lg'>S'inscrire</a>
         </div>
 
         <div class='col-6'>
-        <p class='text-'>Bienvenue sur notre page!</p>
+        <a href='#' class='btn btn-success btn-lg'>Bienvenue sur notre site!</a>
         </div>
         
       </div>
@@ -167,38 +193,59 @@ function boutonsAcceuil(){
 //footer
 function master_footer(){
   printf('
-  <section class="py-5">
-    <div class="container">
-      <footer class="pt-4 my-md-5 pt-md-5 bg-dark">
-        ');
-        printf('<div class="footer container mt-5 py-5">
-        <div class="row">
-          <div class="col-3 col-md">
-            <img class="mb-2" src="img/logo.png" alt="logo" width="24" height="24">
-            <small class="d-block mb-3 text-muted">&copy; 2020</small>
+  <div class="containerf-fluid ">
+  <footer>
+      <div class="row align-items-top">
+        <div class="col-1">
+
+        </div>
+        <div class="col-3 col-md">
+        <div class="titreFooter1col">
+          Marquises Wedding
+        </div>
+        </div>
+        <div class="col-3">
+        <div class="titreFooter2col">
+          <div class="petitpetittransparent">
+            kfkfkfkfk
           </div>
-          <div class="col-3 col-md text-white">
-            <h5>Retrouvez nous!</h5>
-            <ul class="list-unstyled text-small">
-              <li><p class="text-white">Marquise Wedding</p></li>
-              <li><p class="text-white">87.26.35.42</p></li>
-              <li><p class="text-white">Taiohae Nuku-Hiva</p></li>
-              <li><a class="text-info" href="#">marquizwedd@mail.com</a></li>
-            </ul>
-          </div> 
-          <div class="col-3 col-md text-white">
-            <h5>Suivez nous!</h5>
-            <ul class="list-unstyled text-small ">
-              <li><a class="text-info text-decoration-none" href="#">Notre page facebook</a></li>
-              <li><a class="text-info text-decoration-none" href="#">Notre Instagram</a></li>
-            </ul>
+          <div class="centrerText">
+          Retrouvez nous
           </div>
-  </div>
+        </div>
+        <div class="centrerText2">
+            <strong> Marquises Wedding <br></strong>
+            <strong>87.26.35.62 <br></strong>
+            <strong>Taiohae Nuku-Hiva <br></strong>
+            <strong>MarkizWedd@gmail.com <br><br></strong>
+        </div>
+        
+      </div>
+      <div class="col-3">
+        <div class="titreFooter3col">
+          <div class="petitpetittransparent">
+            kfkfkfkfk
+          </div>
+          <div class="centrerText">
+          Suivez nous sur
+          </div>
+        </div>
+        <div class="centrerText">
+        <a href="https://www.facebook.com" title="facebook">
+          <img src="/img/facebookpng.jpg" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/?hl=fr" title="facebook">
+          <img src="/img/instagram.png" alt="instagram">
+        </a>
+        </div>
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
+  </footer>
 </div>
-      </footer>
-    </div>
-  </section>
-  ');
+');
 }
 
 

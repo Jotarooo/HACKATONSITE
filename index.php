@@ -10,27 +10,20 @@
   <title>Marquises Wedding</title>
 </head>
 <body>
+    <?php require('utils.php')?>
  
   <!-- header -->
-  <header class="headerHeader">
-    <div class="containerh-fluid">
-      <div class="row h-100 align-items-center">
-        <div class="col-3">
-          <img class="logo" src="img/logo.png" alt="logo">
-        </div>
-          <div class="col-9">
-            <div class="titreNom titre">
-              Marquises Wedding
-            </div>
-          </div>
-            <div class="sloganNom slogan">
-              Vivez Vos Rêves aux Marquises
-            </div>
-      </div>
-    </div>
-  </header>
-  <!--body-->
+ <?php require('utils.php');
+
+ master_header();?>
+
+
+
+
+  <!--Content-->
 <div class="bodybody">
+    <?php boutonsAcceuil()?>
+
   <div class="container-fluid">
 
     <div class="row">
@@ -80,59 +73,7 @@
 </div>
 
   <!--footer-->
-  <div class="containerf-fluid ">
-  <footer>
-      <div class="row align-items-top">
-        <div class="col-1">
-
-        </div>
-        <div class="col-3 col-md">
-        <div class="titreFooter1col">
-          Marquises Wedding
-        </div>
-        </div>
-        <div class="col-3">
-        <div class="titreFooter2col">
-          <div class="petitpetittransparent">
-            kfkfkfkfk
-          </div>
-          <div class="centrerText">
-          Retrouvez nous
-          </div>
-        </div>
-        <div class="centrerText2">
-            <strong> Marquises Wedding <br></strong>
-            <strong>87.26.35.62 <br></strong>
-            <strong>Taiohae Nuku-Hiva <br></strong>
-            <strong>MarkizWedd@gmail.com <br><br></strong>
-        </div>
-        
-      </div>
-      <div class="col-3">
-        <div class="titreFooter3col">
-          <div class="petitpetittransparent">
-            kfkfkfkfk
-          </div>
-          <div class="centrerText">
-          Suivez nous sur
-          </div>
-        </div>
-        <div class="centrerText">
-        <a href="https://www.facebook.com" title="facebook">
-          <img src="/img/facebookpng.jpg" alt="facebook">
-        </a>
-        <a href="https://www.instagram.com/?hl=fr" title="facebook">
-          <img src="/img/instagram.png" alt="instagram">
-        </a>
-        </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-      </div>
-  </footer>
-</div>
-
+ <?php master_footer(); ?>
 </body>
 
 
