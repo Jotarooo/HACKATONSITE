@@ -11,18 +11,17 @@
 <body>
 
 <?php
-require('utils.php');
+    require('utils.php');
 
-master_header();
+    master_header();
 
+    multi_prestataire();
 
- multi_prestataire();
-
- boutonsPresta();
- master_footer();
+    boutonsPresta();
+    master_footer();
  
  
- ?>
+?>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

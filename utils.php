@@ -99,8 +99,8 @@ function navBarCustom(){
 function master_header(){
 
   printf( '
-  <header class="headerHeader">
-  <div class="containerh-fluid">
+  <header class="headerHeader" >
+  <div class="containerh-fluid" id=hautDepage>
     <div class="row h-100 align-items-center">
       <div class="col-3">
         <img class="logo" src="img/logo.png" alt="logo">
@@ -149,13 +149,12 @@ function boutonsAcceuil(){
       <div class='row'>
 
         <div class='col-6 '>
-        <a href='#hautDePage' class='btn btn-danger '>Haut de page</a>
+        <a href='#' class='btn btn-danger '>S'inscrire</a>
         </div>
 
         <div class='col-6'>
-        <a href='nosprestataire.php' class='btn btn-danger '>Voir nos prestataires</a>
+        <a href='nosprestataire.php' class='btn btn-danger '>Bienvenue sur notre page!</a>
         </div>
-
         
       </div>
       
