@@ -270,8 +270,15 @@
     text-align: center;
 }
 .bodybodyinscription {
+    height:1359px;
+    background-image: url('img/inscriptionEnCours.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.containeri-fluid {
+    
     height:1360px;
     background-image: url('/img/inscriptionEnCours.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 }
