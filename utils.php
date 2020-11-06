@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO 8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
 <?php
 
 
@@ -92,6 +108,9 @@ function master_header(){
 
 }
 
+
+
+
 //quand le devis est fini
 function alertdevis(){
   printf('
@@ -107,18 +126,51 @@ function alertdevis(){
   ');
 }
 
-function boutonsRepetitif(){
-  printf('
-    <div class="container">
-      <div class="row col-3">
+function boutonsPresta(){
+  printf("
+    <div class='container'>
+      <div class='row'>
 
-      <a href="#hautDePage" class="btn ">Haut de page</a>
+        <div class=' col-4'>
+        <a href='#hautDePage' class='btn btn-info '>Haut de page</a>
+        </div>
+
+        <div class='col-4'>
+        <a href='formulaire.php' class='btn btn-info'>Faire appel à des prestataires</a>
+        </div>
+
+        <div class=' col-4'>
+        <a href='index.php' class='btn btn-info'>Retour à l'acceuil</a>
+        </div>
 
       </div>
     </div>
 
-  ');
+  ");
+}
 
+function boutonsAcceuil(){
+  printf("
+    <div class='container'>
+      <div class='row'>
+
+        <div class='col-4 '>
+        <a href='#hautDePage' class='btn '>Haut de page</a>
+        </div>
+
+        <div class='col-4'>
+        <a href='nosprestataire.php' class='btn '>Voir nos prestataires</a>
+        </div>
+
+        <div class='col-4'>
+        <a href='index.php' class='btn '>Retour à l'acceuil</a>
+        </div>
+
+      </div>
+      
+    </div>
+
+  ");
 }
 
 
@@ -128,10 +180,11 @@ function master_footer(){
   <section class="py-5">
     <div class="container">
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
-
-        <div class="row">
-          <div class="col-3"><a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div> 
-          <div class="col-3 col-md">
+        ');
+  printf('<div class="footer container mt-5 py-5">
+  <div class="row">
+    <div class="h1 col-3 ">Footer</div> 
+    <div class="col-3 col-md">
             <img class="mb-2" src="img/logo.png" alt="logo" width="24" height="24">
             <small class="d-block mb-3 text-muted">&copy; 2020</small>
           </div>
@@ -151,9 +204,8 @@ function master_footer(){
               <li><a class="text-info text-decoration-none" href="#">Notre Instagram</a></li>
             </ul>
           </div>
-
-      
-        </div>
+  </div>
+</div>
       </footer>
     </div>
   </section>
