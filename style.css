@@ -275,10 +275,9 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.containeri-fluid {
-    
-    height:1360px;
-    background-image: url('/img/inscriptionEnCours.jpg');
-    background-size: cover;
+.bodybodydoleances {
+    height:1359px;
+    background-image: url('img/doleances.PNG');
+    background-position: center;
     background-repeat: no-repeat;
 }
