@@ -90,6 +90,11 @@ function navBarCustom(){
 }
 
 
+
+
+
+
+
 //header. touchable
 function master_header(){
 
@@ -285,6 +290,24 @@ function multi_cards_prestataire(){
   $mysqli->close();
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function contentMain(){
