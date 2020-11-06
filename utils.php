@@ -30,12 +30,12 @@ function GetAllPrestataire() {
 
 function master_header(){
 
-  printf( '<div class="container header pt-3">
+  printf( '<div class="container masthead header pt-3">
   <div class="row"> 
       <div class = "h1 col- ">Logo</div>  
 
-      <div class="h1 col-11 text-center">
-          <p>Markiz Wedding</p>
+      <div class="titrePrincipal col-11 text-center">
+          <p >Markiz Wedding</p>
       </div>
   </div>
 </div>');
@@ -60,8 +60,8 @@ function alertdevis(){
 
 function master_footer(){
   printf('
-  <div class="container">
-    <div class="row"><div class="col-3">
+  <div class="container masterfooter">
+    <div class="row "><div class="col-3">
       <a class="btn btn-primary" href="index.php" role="button">Retour a lacceuil</a></div>
       <a href="formulaire.php" class="btn btn-primary">faire un formulaire</a>
 
@@ -158,15 +158,11 @@ function multi_cards_prestataire(){
 function multi_prestataire(){
   $mysqli = GetConnection();
   
-  // Ex?cution des requ?tes SQL
   $query = "SELECT id, nom, description, categorie FROM Prestataire";
   if ($stmt = $mysqli->prepare($query)) {
   
-      /* Ex?cution de la requ?te */
       $stmt->execute();
   
-      /* Association des variables de r?sultat */
-      //$stmt->bind_result($id, $nom, $description, $categorie );
       $colId=0;
       $colNom=1;
       $colDescription=2;
@@ -180,7 +176,6 @@ function multi_prestataire(){
       }
   
       $categories = array_unique($categories);
-      /* Lecture des valeurs */
       foreach($categories as $categorie) {
         printf('
         <div class="card text-center container my-5" style="width: auto">
@@ -196,16 +191,11 @@ function multi_prestataire(){
               <div class="collapse" id="descript-'.$categorie.'" >
             ');
   
-                /* pour chaque cat�gorie, afficher le prestataire */
                 foreach($prestas as $p) 
                 {
                 if($p[$colCategorie] == $categorie) {
-                  printf('      
-                    
-                
-                  <div class="card card-body">'.$p[$colDescription].'+'.$p[$colNom].'</div>
-                
-          
+                  printf('   
+                  <div class="card card-body">'.$p[$colNom].' '. $p[$colDescription].'</div>
           ');
             }
           }
@@ -216,10 +206,8 @@ function multi_prestataire(){
         ');      
       }
   
-      /* Fermeture de la commande */
       $stmt->close();
   }
-  /* Fermeture de la connexion */
   $mysqli->close();
   
 }
