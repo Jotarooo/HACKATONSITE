@@ -1,5 +1,4 @@
 .containerh-fluid {
-    background-image: url(/img/header.png);
     background-size: cover;
     height: 645px;
 }
@@ -265,3 +264,4 @@
     font-size: 105px;
     font-weight: bold;
     text-align: center;
+}
