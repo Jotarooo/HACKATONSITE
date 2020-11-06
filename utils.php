@@ -123,7 +123,7 @@ function master_header(){
 
 function boutonsOrganiserVotreMariage(){
   printf("
-    <div class='container'>
+    <div class='container my-6'>
       <div class='row'>
 
         <div class=' col-4'>
@@ -149,7 +149,7 @@ function boutonsOrganiserVotreMariage(){
 function boutonsPresta(){
   printf("
     <div class='container'>
-      <div class='row'>
+      <div class='row '>
 
         <div class=' col-4'>
         <a href='#hautDePage' class='btn btn-info '>Haut de page</a>
